@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #heading{
+                color: red;
+            }
+        </style>
+    </head>
+    <div id="root"></div>
+
+    <body>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+        <script>
+            // const heading = React.createElement('h1',{},'Hello World');
+            const heading = React.createElement('h1',{
+                id:'heading'
+            },'Hello World');
+              const root = ReactDOM.createRoot(document.getElementById('root'));
+            root.render(heading);
+
+            //{} are props and 'hello world is children'
+        
+        </script>
+    </body>
+</html>
